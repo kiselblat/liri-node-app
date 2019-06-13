@@ -13,7 +13,25 @@ var argument = process.argv.slice(3).join(" ");
 // console.log(argument);
 
 var concertThis = function(searchString) {
-  console.log("concertThis()" , searchString);
+  var queryUrl = "https://rest.bandsintown.com/artists/" + searchString + "/events?app_id=codingbootcamp"
+  console.log("concertThis()" , queryUrl);
+
+  axios.get(queryUrl).then(
+    function(response) {
+      response.data.forEach(function(element) {
+        console.log(element.venue.name);
+        if (element.venue.region) {
+          console.log(`${element.venue.city}, ${element.venue.region}`);
+        } else {
+          console.log(`${element.venue.city}, ${element.venue.country}`);
+        }
+        console.log(element.datetime);
+        console.log('--------------------------------')
+      });
+    })
+    .catch(function(error) {
+      console.log("error" , error);
+    });
 }
 
 var spotifyThisSong = function(searchString) {
@@ -53,7 +71,11 @@ var doWhatItSays = function() {
 
 switch(command) {
   case 'concert-this':
-    concertThis(argument);
+    if (!argument) {
+      concertThis("Hootie and the Blowfish");
+    } else {
+      concertThis(argument);
+    }
     break;
   case 'spotify-this-song':
     if (!argument) {
