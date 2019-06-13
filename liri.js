@@ -12,6 +12,10 @@ var command = process.argv[2];
 var argument = process.argv.slice(3).join(" ");
 // console.log(argument);
 
+var concertThis = function(searchString) {
+  console.log("concertThis()" , searchString);
+}
+
 var spotifyThisSong = function(searchString) {
   spotify
     .search({ type: 'track', query: searchString })
@@ -27,9 +31,17 @@ var spotifyThisSong = function(searchString) {
     });
 }
 
+var movieThis = function(searchString) {
+  console.log("movieThis()" , searchString);
+}
+
+var doWhatItSays = function() {
+  console.log("doWhatItSays()");
+}
+
 switch(command) {
   case 'concert-this':
-    //concertThis(argument);
+    concertThis(argument);
     break;
   case 'spotify-this-song':
     if (!argument) {
@@ -39,6 +51,12 @@ switch(command) {
     }
     break;
   case 'movie-this':
-    //movieThis(argument);
+    if (!argument) {
+      movieThis("Mr. Nobody");
+    } else {
+      movieThis(argument);
+    }
     break;
+  case 'do-what-it-says':
+    doWhatItSays();
 }
