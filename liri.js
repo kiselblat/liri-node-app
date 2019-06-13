@@ -32,7 +32,19 @@ var spotifyThisSong = function(searchString) {
 }
 
 var movieThis = function(searchString) {
-  console.log("movieThis()" , searchString);
+  var queryUrl = "http://www.omdbapi.com/?t=" + searchString + "&y=&plot=short&apikey=trilogy";
+  console.log("movieThis()" , queryUrl);
+
+  axios.get(queryUrl).then(
+    // If the request with axios is successful
+    function(response) {
+      // Then log the Release Year for the movie
+      console.log(`${response.data.Title} (${response.data.Year})`);
+      console.log(response.data.Plot);
+    })
+    .catch(function(error) {
+      console.log("error" , error);
+    });
 }
 
 var doWhatItSays = function() {
