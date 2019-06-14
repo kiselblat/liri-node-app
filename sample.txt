@@ -237,3 +237,183 @@
   "type": "track",
   "uri": "spotify:track:2m1hi0nfMR9vdGC8UcrnwU"
 }
+
+// Sample output from OMDB
+
+{
+  "Title": "The Matrix",
+  "Year": "1999",
+  "Rated": "R",
+  "Released": "31 Mar 1999",
+  "Runtime": "136 min",
+  "Genre": "Action, Sci-Fi",
+  "Director": "Lana Wachowski, Lilly Wachowski",
+  "Writer": "Lilly Wachowski, Lana Wachowski",
+  "Actors": "Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss, Hugo Weaving",
+  "Plot": "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.",
+  "Language": "English",
+  "Country": "USA",
+  "Awards": "Won 4 Oscars. Another 34 wins & 48 nominations.",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BNzQzOTk3OTAtNDQ0Zi00ZTVkLWI0MTEtMDllZjNkYzNjNTc4L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
+  "Ratings": [
+      {
+      "Source": "Internet Movie Database",
+      "Value": "8.7/10"
+      },
+      {
+      "Source": "Rotten Tomatoes",
+      "Value": "88%"
+      },
+      {
+      "Source": "Metacritic",
+      "Value": "73/100"
+      }
+    ],
+  "Metascore": "73",
+  "imdbRating": "8.7",
+  "imdbVotes": "1,500,156",
+  "imdbID": "tt0133093",
+  "Type": "movie",
+  "DVD": "21 Sep 1999",
+  "BoxOffice": "N/A",
+  "Production": "Warner Bros. Pictures",
+  "Website": "http://www.whatisthematrix.com",
+  "Response": "True"
+}
+
+// Sample output from bands in town
+
+[
+  {
+  "offers": [
+  {
+  "type": "Tickets",
+  "url": "https://www.bandsintown.com/t/100561652?app_id=codingbootcamp&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=ticket",
+  "status": "available"
+  }
+  ],
+  "venue": {
+  "name": "Austin360 Amphitheater",
+  "country": "United States",
+  "region": "TX",
+  "city": "Austin",
+  "latitude": "30.134904",
+  "longitude": "-97.644332"
+  },
+  "datetime": "2019-06-13T19:00:07",
+  "on_sale_datetime": "",
+  "description": "",
+  "lineup": [
+  "Hootie & the Blowfish"
+  ],
+  "id": "100561652",
+  "artist_id": "3749",
+  "url": "https://www.bandsintown.com/e/100561652?app_id=codingbootcamp&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=event"
+  },
+  {
+  "offers": [
+  {
+  "type": "Tickets",
+  "url": "https://www.bandsintown.com/t/100561672?app_id=codingbootcamp&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=ticket",
+  "status": "available"
+  }
+  ],
+  "venue": {
+  "name": "Cynthia Woods Mitchell Pavilion presented by Huntsman",
+  "country": "United States",
+  "region": "TX",
+  "city": "The Woodlands",
+  "latitude": "30.1577778",
+  "longitude": "-95.4891667"
+  },
+  "datetime": "2019-06-14T19:00:36",
+  "on_sale_datetime": "",
+  "description": "",
+  "lineup": [
+  "Hootie & the Blowfish"
+  ],
+  "id": "100561672",
+  "artist_id": "3749",
+  "url": "https://www.bandsintown.com/e/100561672?app_id=codingbootcamp&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=event"
+  },
+  {
+  "offers": [
+  {
+  "type": "Tickets",
+  "url": "https://www.bandsintown.com/t/100561675?app_id=codingbootcamp&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=ticket",
+  "status": "available"
+  }
+  ],
+  "venue": {
+  "name": "Dos Equis Pavilion",
+  "country": "United States",
+  "region": "TX",
+  "city": "Dallas",
+  "latitude": "32.7833333",
+  "longitude": "-96.8"
+  },
+  "datetime": "2019-06-15T19:00:13",
+  "on_sale_datetime": "",
+  "description": "",
+  "lineup": [
+  "Hootie & the Blowfish"
+  ],
+  "id": "100561675",
+  "artist_id": "3749",
+  "url": "https://www.bandsintown.com/e/100561675?app_id=codingbootcamp&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=event"
+  },
+  ...
+  {
+  "offers": [
+  {
+  "type": "Tickets",
+  "url": "https://www.bandsintown.com/t/100562272?app_id=codingbootcamp&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=ticket",
+  "status": "available"
+  }
+  ],
+  "venue": {
+  "name": "Budweiser Stage",
+  "country": "Canada",
+  "region": "",
+  "city": "Toronto",
+  "latitude": "43.6293322",
+  "longitude": "-79.4150723"
+  },
+  "datetime": "2019-08-29T19:00:11",
+  "on_sale_datetime": "",
+  "description": "",
+  "lineup": [
+  "Hootie & the Blowfish"
+  ],
+  "id": "100562272",
+  "artist_id": "3749",
+  "url": "https://www.bandsintown.com/e/100562272?app_id=codingbootcamp&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=event"
+  },
+ ...,
+  {
+  "offers": [
+  {
+  "type": "Tickets",
+  "url": "https://www.bandsintown.com/t/101111948?app_id=codingbootcamp&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=ticket",
+  "status": "available"
+  }
+  ],
+  "venue": {
+  "name": "O2 Academy Birmingham",
+  "country": "United Kingdom",
+  "region": "",
+  "city": "Birmingham",
+  "latitude": "52.473784",
+  "longitude": "-1.899388"
+  },
+  "datetime": "2019-10-16T19:00:50",
+  "on_sale_datetime": "",
+  "description": "",
+  "lineup": [
+  "Hootie & the Blowfish"
+  ],
+  "id": "101111948",
+  "artist_id": "3749",
+  "url": "https://www.bandsintown.com/e/101111948?app_id=codingbootcamp&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=event"
+  }
+  ]
