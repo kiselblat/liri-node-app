@@ -1,4 +1,5 @@
-// Add required packages:
+// LIRI is a command line app that can return information about touring bands, movies, and songs!
+
 // axios
 var axios = require('axios');
 // filesystem
@@ -19,10 +20,10 @@ var argument = process.argv.slice(3).join(" ");
 // Displays a given band's touring schedule, as provided by bandsintown
 var concertThis = function(searchString) {
   var queryUrl = "https://rest.bandsintown.com/artists/" + searchString + "/events?app_id=codingbootcamp"
-  // console.log(`concertThis(${searchString})` , queryUrl);
+  console.log(`concertThis(${searchString})` , queryUrl);
   axios.get(queryUrl).then(
     function(response) {
-      fs.appendFile("log.txt" , `----${searchString} Tour Dates----\n` , errorHandler);
+      fs.appendFile("log.txt" , `***${searchString} Tour Dates***\n` , errorHandler);
 
       response.data.forEach(function(element) {
         var venueName = element.venue.name;
@@ -69,7 +70,7 @@ var spotifyThisSong = function(searchString) {
 // Displays information about a movie whose title is provided by the user, provided by OMDB
 var movieThis = function(searchString) {
   var queryUrl = "http://www.omdbapi.com/?t=" + searchString + "&y=&plot=short&apikey=trilogy";
-  console.log(`movieThis(${searchString})` , queryUrl);
+  // console.log("movieThis(): ", searchString , queryUrl);
   axios.get(queryUrl).then(
     function(response) {
       var movieTitle = `${response.data.Title} (${response.data.Year})`;
@@ -77,7 +78,7 @@ var movieThis = function(searchString) {
       var moviePlot = response.data.Plot;
       var movieRatings = "";
       response.data.Ratings.forEach(function(element) {
-        movieRatings = movieRatings + element.Source + ": " + element.Value + " ";
+        movieRatings += element.Source + ": " + element.Value + " ";
       });
       var movieLocale = `Country: ${response.data.Country} Language(s): ${response.data.Language}`;
 
@@ -96,7 +97,7 @@ var movieThis = function(searchString) {
 var doWhatItSays = function() {
   fs.readFile("random.txt", "utf8", function(error, data) {
     errorHandler(error);
-    var fileInput = data.split(',' , 1);
+    var fileInput = data.split(',' , 2);
     // console.log("doWhatItSays(): " , fileInput);
     initiate(fileInput[0] , fileInput[1]);
   });
