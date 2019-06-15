@@ -98,8 +98,10 @@ var doWhatItSays = function() {
   fs.readFile("random.txt", "utf8", function(error, data) {
     errorHandler(error);
     var fileInput = data.split(',' , 2);
-    // console.log("doWhatItSays(): " , fileInput);
-    initiate(fileInput[0] , fileInput[1]);
+    var instruction = fileInput[0];
+    var searchString = fileInput[1].slice(1 , fileInput[1].length - 1);
+    console.log("doWhatItSays(): " , instruction , searchString);
+    initiate(instruction , searchString);
   });
 }
 
