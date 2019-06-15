@@ -20,7 +20,7 @@ var argument = process.argv.slice(3).join(" ");
 // Displays a given band's touring schedule, as provided by bandsintown
 var concertThis = function(searchString) {
   var queryUrl = "https://rest.bandsintown.com/artists/" + searchString + "/events?app_id=codingbootcamp"
-  console.log(`concertThis(${searchString})` , queryUrl);
+  // console.log(`concertThis(${searchString})` , queryUrl);
   axios.get(queryUrl).then(
     function(response) {
       fs.appendFile("log.txt" , `***${searchString} Tour Dates***\n` , errorHandler);
@@ -78,7 +78,7 @@ var movieThis = function(searchString) {
       var moviePlot = response.data.Plot;
       var movieRatings = "";
       response.data.Ratings.forEach(function(element) {
-        movieRatings += element.Source + ": " + element.Value + " ";
+        movieRatings += `${element.Source}: ${element.Value} `;
       });
       var movieLocale = `Country: ${response.data.Country} Language(s): ${response.data.Language}`;
 
