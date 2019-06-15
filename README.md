@@ -46,7 +46,7 @@ LIRI is organized into four different commands:
   * `movie-this`
   * `do-what-it-says`
 
-By invoking these, followed by a band name, song title, or movie title, LIRI will automatically select and search the appropriate online resourse, like so:
+By invoking these, followed by a band name, song title, or movie title, LIRI will automatically select and search the appropriate online resourse.
 
 ### `concert-this`:
 
@@ -75,7 +75,7 @@ Highland Park, IL
 
 ### `spotify-this-song`
 
-This uses the `node-spotify-api` npm package to request song information from the **Spotify** API.
+This uses the `node-spotify-api` package to request song information from the **Spotify** API.
 
 Search Spotify like this:
 
