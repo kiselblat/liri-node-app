@@ -1,5 +1,4 @@
 # LIRI
----
 
 ## Overview
 LIRI is a CLI app that delivers the goods from multiple APIs! Search Spoitfy for tracks, bandsintown for shows, or the OMDB for movies right from the command line.
@@ -73,6 +72,8 @@ Highland Park, IL
 
 [See the demo](./docs/gifs/concert-this-demo.gif)
 
+---
+
 ### `spotify-this-song`
 
 This uses the `node-spotify-api` package to request song information from the **Spotify** API.
@@ -93,6 +94,8 @@ https://open.spotify.com/track/6Ac4NVYYl2U73QiTt11ZKd
 ```
 
 [See the demo](./docs/gifs/spotify-this-song-demo.gif)
+
+---
 
 ### `movie-this`
 
@@ -116,6 +119,8 @@ Country: USA Language(s): English
 
 [See the demo](./docs/gifs/movie-this-demo.gif)
 
+---
+
 ### `do-what-it-says`
 
 Do what it says makes use of the `fs` package to read a command and argument from the provided `random.txt` file.
@@ -137,6 +142,8 @@ https://open.spotify.com/track/6e40mgJiCid5HRAGrbpGA6
 ```
 
 [See the demo](./docs/gifs/do-what-it-says-demo.gif)
+
+---
 
 ## Other Features
 
@@ -168,6 +175,8 @@ Hooked On A Feeling
 https://open.spotify.com/track/6Ac4NVYYl2U73QiTt11ZKd
 ----------------
 ```
+
+---
 
 ### Default behaviors
 
