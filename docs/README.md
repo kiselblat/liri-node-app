@@ -70,7 +70,7 @@ Highland Park, IL
 --------------------------------
 ```
 
-[See the demo](./docs/gifs/concert-this-demo.gif)
+[See the demo](gifs/concert-this-demo.gif)
 
 ---
 
@@ -93,7 +93,7 @@ Hooked On A Feeling
 https://open.spotify.com/track/6Ac4NVYYl2U73QiTt11ZKd
 ```
 
-[See the demo](./docs/gifs/spotify-this-song-demo.gif)
+[See the demo](gifs/spotify-this-song-demo.gif)
 
 ---
 
@@ -117,7 +117,7 @@ Internet Movie Database: 8.7/10 Rotten Tomatoes: 88% Metacritic: 73/100
 Country: USA Language(s): English
 ```
 
-[See the demo](./docs/gifs/movie-this-demo.gif)
+[See the demo](gifs/movie-this-demo.gif)
 
 ---
 
@@ -141,7 +141,7 @@ The Hits--Chapter One
 https://open.spotify.com/track/6e40mgJiCid5HRAGrbpGA6
 ```
 
-[See the demo](./docs/gifs/do-what-it-says-demo.gif)
+[See the demo](gifs/do-what-it-says-demo.gif)
 
 ---
 
