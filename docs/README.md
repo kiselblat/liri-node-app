@@ -1,9 +1,17 @@
 # LIRI
 
+## Contents
+
+  1. [Overview](##Overview)
+  2. [Installation and Dependencies](##Installation-and-Dependencies)
+  3. [How it Works](##How-it-Works)
+  4. [Other Features](##Other-Features)
+  5. [About](##About)
+
 ## Overview
 LIRI is a CLI app that delivers the goods from multiple APIs! Search Spoitfy for tracks, bandsintown for shows, or the OMDB for movies right from the command line.
 
-## Installation and Requirements
+## Installation and Dependencies
 
 ### Setting up LIRI
 
