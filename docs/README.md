@@ -192,4 +192,4 @@ Each of the three search functions also have a default search that they perform 
 
 ## About
 
-LIRI was developed based on an assignment in the University of Minnesota Full-Stack Web Developer Boot Camp program. This version of the assignment was authored entirely by me, Thomas Christ.
+LIRI was developed based on an assignment in the University of Minnesota Full-Stack Web Developer Boot Camp program. This version of the assignment was authored entirely by me, [Thomas Christ](https://kiselblat.github.io/).
