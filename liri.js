@@ -73,22 +73,23 @@ var movieThis = function(searchString) {
   // console.log("movieThis(): ", searchString , queryUrl);
   axios.get(queryUrl).then(
     function(response) {
-      var movieTitle = `${response.data.Title} (${response.data.Year})`;
-      var movieActors = "Starring: " + response.data.Actors;
-      var moviePlot = response.data.Plot;
+      
       var movieRatings = "";
       response.data.Ratings.forEach(function(element) {
         movieRatings += `${element.Source}: ${element.Value} `;
       });
-      var movieLocale = `Country: ${response.data.Country} Language(s): ${response.data.Language}`;
 
-      console.log(movieTitle);
-      console.log(movieActors);
-      console.log(moviePlot);
-      console.log(movieRatings);
-      console.log(movieLocale);
+      var movieData = [
+        "Title: " + `${response.data.Title} (${response.data.Year})`,
+        "Starring: " + response.data.Actors,
+        "Summary: " + response.data.Plot,
+        "Ratings: " + movieRatings,
+        `Country: ${response.data.Country} Language(s): ${response.data.Language}`  
+      ].join('\n');
 
-      fs.appendFile("log.txt" , `${movieTitle}\n${movieActors}\n${moviePlot}\n${movieRatings}\n${movieLocale}\n----------------\n` , errorHandler);
+      console.log(movieData);
+
+      fs.appendFile("log.txt" , `${movieData}\n----------------\n` , errorHandler);
     })
     .catch(errorHandler);
 }
