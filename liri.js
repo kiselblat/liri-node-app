@@ -116,21 +116,21 @@ var errorHandler = function(error) {
 var initiate = function(doThis , search) {
   switch(doThis) {
     case 'concert-this':
-      if (!search) {
+      if (typeof search === typeof undefined || search === "") {
         concertThis("Hootie and the Blowfish");
       } else {
         concertThis(search);
       }
       break;
     case 'spotify-this-song':
-      if (!search) {
+      if (typeof search === typeof undefined || search === "") {
         spotifyThisSong("The Sign Ace of Base");
       } else {
         spotifyThisSong(search);
       }
       break;
     case 'movie-this':
-      if (!search) {
+      if (typeof search === typeof undefined || search === "") {
         movieThis("Mr. Nobody");
       } else {
         movieThis(search);
