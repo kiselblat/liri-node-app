@@ -86,7 +86,7 @@ Highland Park, IL
 --------------------------------
 ```
 
-![See the demo](gifs/concert-this-demo.gif)
+![Demo of `concert-this`][concert-demo]
 
 ---
 
@@ -109,7 +109,7 @@ Hooked On A Feeling
 https://open.spotify.com/track/6Ac4NVYYl2U73QiTt11ZKd
 ```
 
-![See the demo](gifs/spotify-this-song-demo.gif)
+![Demo of `spotify-this-song`][spotify-demo]
 
 ---
 
@@ -133,7 +133,7 @@ Internet Movie Database: 8.7/10 Rotten Tomatoes: 88% Metacritic: 73/100
 Country: USA Language(s): English
 ```
 
-![See the demo](gifs/movie-this-demo.gif)
+![Demo of `movie-this`][movie-demo]
 
 ---
 
@@ -157,7 +157,7 @@ The Hits--Chapter One
 https://open.spotify.com/track/6e40mgJiCid5HRAGrbpGA6
 ```
 
-![See the demo](gifs/do-what-it-says-demo.gif)
+![Demo of `do-what-it-says`][do-it-demo]
 
 ---
 
@@ -201,3 +201,9 @@ Each of the three search functions also have a default search that they perform 
 ## About
 
 LIRI was developed based on an assignment in the University of Minnesota Full-Stack Web Developer Boot Camp program. This version of the assignment was authored entirely by me, [Thomas Christ](https://kiselblat.github.io/).
+
+<!-- image references -->
+[concert-demo]:gifs/concert-this-demo.gif
+[spotify-demo]: gifs/spotify-this-song-demo.gif
+[movie-demo]: gifs/movie-this-demo.gif
+[do-it-demo]: gifs/do-what-it-says-demo.gif
