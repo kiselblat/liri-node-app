@@ -2,11 +2,11 @@
 
 ## Contents
 
-  1. [Overview](##Overview)
-  2. [Installation and Dependencies](##Installation-and-Dependencies)
-  3. [How it Works](##How-it-Works)
-  4. [Other Features](##Other-Features)
-  5. [About](##About)
+  1. [Overview](##overview)
+  2. [Installation and Dependencies](##installation-and-dependencies)
+  3. [How it Works](##how-it-works)
+  4. [Other Features](##other-features)
+  5. [About](##about)
 
 ## Overview
 LIRI is a CLI app that delivers the goods from multiple APIs! Search Spoitfy for tracks, bandsintown for shows, or the OMDB for movies right from the command line.
@@ -78,7 +78,7 @@ Highland Park, IL
 --------------------------------
 ```
 
-[See the demo](gifs/concert-this-demo.gif)
+![See the demo](gifs/concert-this-demo.gif)
 
 ---
 
@@ -101,7 +101,7 @@ Hooked On A Feeling
 https://open.spotify.com/track/6Ac4NVYYl2U73QiTt11ZKd
 ```
 
-[See the demo](gifs/spotify-this-song-demo.gif)
+![See the demo](gifs/spotify-this-song-demo.gif)
 
 ---
 
@@ -125,7 +125,7 @@ Internet Movie Database: 8.7/10 Rotten Tomatoes: 88% Metacritic: 73/100
 Country: USA Language(s): English
 ```
 
-[See the demo](gifs/movie-this-demo.gif)
+![See the demo](gifs/movie-this-demo.gif)
 
 ---
 
@@ -149,7 +149,7 @@ The Hits--Chapter One
 https://open.spotify.com/track/6e40mgJiCid5HRAGrbpGA6
 ```
 
-[See the demo](gifs/do-what-it-says-demo.gif)
+![See the demo](gifs/do-what-it-says-demo.gif)
 
 ---
 
