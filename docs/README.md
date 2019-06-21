@@ -4,8 +4,16 @@
 
   1. [Overview](#overview)
   2. [Installation and Dependencies](#installation-and-dependencies)
+      1. [Setting Up LIRI](#setting-up-liri)
+      2. [Dependencies](#dependencies)
   3. [How it Works](#how-it-works)
+      1. [`concert-this`](#concert-this)
+      2. [`spotify-this-song`](#spotify-this-song)
+      3. [`movie-this`](#movie-this)
+      4. [`do-what-it-says`](#do-what-it-says)
   4. [Other Features](#other-features)
+      1. [`log.txt`](#log.txt)
+      2. [Default Behaviors](#default-behaviors)
   5. [About](#about)
 
 ## Overview
@@ -13,7 +21,7 @@ LIRI is a CLI app that delivers the goods from multiple APIs! Search Spoitfy for
 
 ## Installation and Dependencies
 
-### Setting up LIRI
+### Setting Up LIRI
 
 LIRI requires the Node.js command line tool. First go to the [node.js](https://nodejs.org/en/) website and download and install node.
 
@@ -48,10 +56,10 @@ LIRI requires several third-party packages to run. These are stored in the `pack
 
 LIRI is organized into four different commands:
 
-  * `concert-this`
-  * `spotify-this-song`
-  * `movie-this`
-  * `do-what-it-says`
+  * [`concert-this`](#concert-this)
+  * [`spotify-this-song`](#spotify-this-song)
+  * [`movie-this`](#movie-this)
+  * [`do-what-it-says`](#do-what-it-says)
 
 By invoking these, followed by a band name, song title, or movie title, LIRI will automatically select and search the appropriate online resourse.
 
